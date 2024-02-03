@@ -41,9 +41,9 @@ const projectData = [
         github: "",
     },
     {
-        image: "/work/1.png",
-        category: "react js",
-        name: "Moii Website",
+        image: "/work/smk.jpeg",
+        category: "html & css js",
+        name: "SMK Mutubumi Website",
         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae perspiciatis amet inventore cupiditate.",
         link: "/",
         github: "",

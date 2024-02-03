@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Button } from "./ui/button";
 import { Download, Send } from "lucide-react";
 import Blur from "./Blur";
+import DownloadCV from "./DownloadCV";
 
 import { RiBriefcase4Fill, RiTeamFill, RiTodoFill, RiArrowDownSLine } from "react-icons/ri";
 
@@ -29,9 +30,8 @@ const Hero = () => {
                                         Contact Me <Send size={18} />
                                     </Button>
                                 </Link>
-                                <Button variant="secondary" className="gap-x-2">
-                                    Download CV
-                                    <Download size={18} />
+                                <Button onClick={DownloadCV} variant="secondary" className="gap-x-2">
+                                    Download CV <Download size={18} />
                                 </Button>
                             </div>
                             {/** socials */}
