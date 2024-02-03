@@ -76,10 +76,13 @@ const skillData = [
         title: "skills",
         data: [
             {
-                name: "HTML/CSS ( Tailwind CSS )",
+                name: "HTML / CSS ( Tailwind CSS )",
             },
             {
-                name: "JavaScript ( React JS and Next JS )",
+                name: "JavaScript ( Node.js, React.js & Next.js )",
+            },
+            {
+                name: "Design ( Figma & Corel Draw )",
             },
             {
                 name: "PHP ( Laravel )",
@@ -88,7 +91,7 @@ const skillData = [
                 name: "Database ( MySQL )",
             },
             {
-                name: "Figma and Corel Draw",
+                name: "Version Control ( Git )",
             },
         ],
     },
@@ -105,16 +108,16 @@ const skillData = [
                 width: 48,
                 height: 48,
             },
-            {
-                imgPath: "/about/notion.svg",
-                width: 48,
-                height: 48,
-            },
-            {
-                imgPath: "/about/wordpress.svg",
-                width: 48,
-                height: 48,
-            },
+            // {
+            //     imgPath: "/about/notion.svg",
+            //     width: 48,
+            //     height: 48,
+            // },
+            // {
+            //     imgPath: "/about/wordpress.svg",
+            //     width: 48,
+            //     height: 48,
+            // },
         ],
     },
 ];
