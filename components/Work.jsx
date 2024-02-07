@@ -17,12 +17,12 @@ import ProjectCard from "@/components/ProjectCard";
 
 const projectData = [
     {
-        image: "https://placehold.co/247x250.jpg",
+        image: "/work/iqb.png",
         category: "Full-Stack",
         name: "Iqbalmp's Portfolio",
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae perspiciatis amet inventore cupiditate.",
-        link: "/",
-        github: "",
+        description: "This website is created for my portfolio purposes. This project is built using React.js with the Next.js framework.",
+        link: "https://iqbalmp.vercel.app",
+        github: "https://iqblmp.github.io",
     },
     {
         image: "https://placehold.co/247x250.jpg",

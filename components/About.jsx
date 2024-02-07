@@ -79,7 +79,7 @@ const skillData = [
                 name: "HTML / CSS ( Tailwind CSS )",
             },
             {
-                name: "JavaScript ( Node.js, React.js & Next.js )",
+                name: "JavaScript ( Node.js, Express.js, React.js & Next.js )",
             },
             {
                 name: "Design ( Figma & Corel Draw )",
@@ -88,7 +88,7 @@ const skillData = [
                 name: "PHP ( Laravel )",
             },
             {
-                name: "Database ( MySQL )",
+                name: "Database ( MySQL & Mongo DB )",
             },
             {
                 name: "Version Control ( Git )",
@@ -155,7 +155,7 @@ const About = () => {
                                 <TabsContent value="personal">
                                     <div className="text-center xl:text-left">
                                         <h3 className="h3 mb-4">Unmatched Service Quality for Over 4 Years</h3>
-                                        <p className="subtitle max-w-xl mx-auto xl:mx-0">I specialize is crafting instuitive websites with cuttig-edge technilogy, delivering dynamic and engaging</p>
+                                        <p className="subtitle max-w-xl mx-auto xl:mx-0">I specialize is crafting instuitive websites with cuttig-edge technology, delivering dynamic and engaging</p>
                                         {/* icons */}
                                         <div className="grid xl:grid-cols-2 gap-4 mb-12">
                                             {infoData.map((item, index) => {
