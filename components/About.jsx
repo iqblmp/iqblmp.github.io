@@ -108,16 +108,6 @@ const skillData = [
                 width: 48,
                 height: 48,
             },
-            // {
-            //     imgPath: "/about/notion.svg",
-            //     width: 48,
-            //     height: 48,
-            // },
-            // {
-            //     imgPath: "/about/wordpress.svg",
-            //     width: 48,
-            //     height: 48,
-            // },
         ],
     },
 ];
@@ -127,7 +117,7 @@ const About = () => {
         return arr.find((item) => item.title === title);
     };
     return (
-        <section className="xl:h-[860px] pb-12 xl:py-24">
+        <section className="xl:h-[790px] pb-12 xl:py-14 ">
             <div className="container mx-auto">
                 <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto">About me</h2>
                 <div className="flex flex-col xl:flex-row">
@@ -154,7 +144,7 @@ const About = () => {
                                 {/* personal */}
                                 <TabsContent value="personal">
                                     <div className="text-center xl:text-left">
-                                        <h3 className="h3 mb-4">Unmatched Service Quality for Over 4 Years</h3>
+                                        <h3 className="h3 mb-4">Unmatched Service Quality for Over 2 Years</h3>
                                         <p className="subtitle max-w-xl mx-auto xl:mx-0">I specialize is crafting instuitive websites with cuttig-edge technology, delivering dynamic and engaging</p>
                                         {/* icons */}
                                         <div className="grid xl:grid-cols-2 gap-4 mb-12">
@@ -239,15 +229,15 @@ const About = () => {
                                     <div className="text-center xl:text-left ">
                                         <h3 className="h3 mb-8">What I Use Everyday</h3>
                                         {/* skills */}
-                                        <div className="mb-16">
+                                        <div className="mb-11">
                                             <h4 className="text-xl font-semibold mb-2">Skills</h4>
                                             <div className="border-b border-border mb-4"></div>
                                             {/* skill list */}
-                                            <div>
+                                            <div className="flex flex-col gap-y-3">
                                                 {getData(skillData, "skills").data.map((item, index) => {
                                                     const { name } = item;
                                                     return (
-                                                        <div className="w-2/4 text-center xl:text-left mx-auto xl:mx-0" key={index}>
+                                                        <div className=" text-center xl:text-left mx-auto xl:mx-0" key={index}>
                                                             <div className="font-medium">{name}</div>
                                                         </div>
                                                     );
