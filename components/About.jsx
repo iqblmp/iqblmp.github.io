@@ -53,20 +53,30 @@ const qualificationData = [
         title: "experience",
         data: [
             {
+                company: "PT Aneke Search Indonesia (ASI Asia Pacific)",
+                role: "Frontend Developer Project",
+                years: "Mar - Sep 2024",
+            },
+            {
+                company: "Campus Coder by CODEPOLITAN",
+                role: "MERN-Stack Scholarship",
+                years: "Jan - Jan 2025",
+            },
+            {
                 company: "Kalijurang Village Office",
-                role: "Project Internship",
-                years: "Feb - May 2022",
+                role: "Fullstack Project Internship",
+                years: "Feb - Jun 2023",
             },
-            {
-                company: "Keren Hat Warehouse",
-                role: "Shop Keeper",
-                years: " Oct 2019 - Dec 2020",
-            },
-            {
-                company: "Putra Mandiri Computer Training Institute",
-                role: "Field Work Practices",
-                years: "Feb - Apr 2018",
-            },
+            // {
+            //     company: "Keren Hat Warehouse",
+            //     role: "Shop Keeper",
+            //     years: " Oct 2019 - Dec 2020",
+            // },
+            // {
+            //     company: "Putra Mandiri Computer Training Institute",
+            //     role: "Field Work Practices",
+            //     years: "Feb - Apr 2018",
+            // },
         ],
     },
 ];
@@ -76,22 +86,25 @@ const skillData = [
         title: "skills",
         data: [
             {
-                name: "HTML / CSS ( Tailwind CSS )",
+                name: "Programming Language ( HTML, CSS, JavaScript, TypeScript, PHP )",
             },
             {
-                name: "JavaScript ( Node.js, Express.js, React.js & Next.js )",
+                name: "Frontend Framework ( React, Next.js )",
             },
             {
-                name: "Design ( Figma & Corel Draw )",
+                name: "UI Framework ( Tailwind CSS, Bootstrap, Material UI, Shadcn UI, etc. )",
             },
             {
-                name: "PHP ( Laravel )",
+                name: "Backend Framework ( Node.js, Express.js, Laravel )",
             },
             {
-                name: "Database ( MySQL & Mongo DB )",
+                name: "Database ( MySQL, MongoDB, Firebase )",
             },
             {
-                name: "Version Control ( Git )",
+                name: "Version Control ( Git & Bitbucket )",
+            },
+            {
+                name: "UI/UX ( Figma )",
             },
         ],
     },
@@ -227,34 +240,16 @@ const About = () => {
                                 {/* skills */}
                                 <TabsContent value="skills">
                                     <div className="text-center xl:text-left ">
-                                        <h3 className="h3 mb-8">What I Use Everyday</h3>
+                                        <h3 className="h3 mb-8">My Skills</h3>
                                         {/* skills */}
                                         <div className="mb-11">
-                                            <h4 className="text-xl font-semibold mb-2">Skills</h4>
-                                            <div className="border-b border-border mb-4"></div>
                                             {/* skill list */}
-                                            <div className="flex flex-col gap-y-3">
+                                            <div className="flex flex-col gap-y-4">
                                                 {getData(skillData, "skills").data.map((item, index) => {
                                                     const { name } = item;
                                                     return (
-                                                        <div className=" text-center xl:text-left mx-auto xl:mx-0" key={index}>
-                                                            <div className="font-medium">{name}</div>
-                                                        </div>
-                                                    );
-                                                })}
-                                            </div>
-                                        </div>
-                                        {/* tools */}
-                                        <div>
-                                            <h4 className="text-xl font-semibold mb-2 xl:text-left">Tools</h4>
-                                            <div className="border-b border-border mb-4"></div>
-                                            {/* tools list */}
-                                            <div className="flex gap-x-8 justify-center xl:justify-start">
-                                                {getData(skillData, "tools").data.map((item, index) => {
-                                                    const { imgPath } = item;
-                                                    return (
-                                                        <div key={index}>
-                                                            <Image src={imgPath} width={48} height={48} alt="" style={{ width: 48, height: 48 }} priority />
+                                                        <div className=" text-center xl:text-left mx-auto xl:mx-0 list-item bg-gradient-to-r from-blue-500 to-teal-500 rounded-full" key={index}>
+                                                            <div className="font-medium py-2 px-4">{name}</div>
                                                         </div>
                                                     );
                                                 })}
